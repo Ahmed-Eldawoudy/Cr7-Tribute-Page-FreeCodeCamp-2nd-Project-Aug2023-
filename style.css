@@ -1,0 +1,147 @@
+/* Style for all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* style for the body */
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #fff6e0;
+  color: #272829;
+}
+/*----- header & navigation -----*/
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #d8d9da;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+/* logo */
+.logo {
+  cursor: pointer;
+  font-size: 2rem;
+}
+/* nav ul */
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #272829;
+}
+nav ul li a:hover {
+  color: #61677a;
+  font-weight: 600;
+}
+/* nav For small devices */
+@media (max-width: 1200px) {
+  header nav {
+    padding: 10px 5%;
+  }
+  nav ul {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+/* ----- tribute-info ----- */
+/* Image & Caption */
+#img-div {
+  padding-top: 68px;
+  position: relative;
+}
+#image {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#img-caption {
+  position: absolute;
+  width: 50%;
+  top: 60%;
+  left: 50%;
+  padding: 20px;
+  color: #d8d9da;
+  background-color: rgba(39, 40, 41, 0.9);
+  text-align: center;
+  border-radius: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  #img-div {
+    padding-top: 48px;
+  }
+  #img-caption {
+    font-size: 16px;
+    width: 100%;
+    top: 75%;
+    left: 0;
+    padding: 10px;
+  }
+}
+/* Records */
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 68px 0 0 0;
+  font-size: 24px;
+}
+#tribute-info ul li {
+  padding: 10px 0;
+}
+#tribute-info ul li span {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#tribute-info p {
+  padding-top: 20px;
+}
+#tribute-info p a:visited {
+  color: blue;
+}
+@media (max-width: 1200px) {
+  #tribute-info {
+    padding: 0 15px;
+    font-size: 18px;
+  }
+  #tribute-info ul {
+    list-style-type: none;
+  }
+  #tribute-info ul li span {
+    font-size: 1.2em;
+  }
+}
+/* Best goal */
+#best-goal {
+  text-align: center;
+  padding-top: 69px;
+}
+@media (max-width: 1200px) {
+  #best-goal {
+    padding-top: 20px;
+  }
+}
+/* footer */
+footer {
+  padding: 10px;
+}
