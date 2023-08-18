@@ -125,7 +125,7 @@ nav ul li a:hover {
     font-size: 18px;
   }
   #tribute-info ul {
-    list-style-type: none;
+/*     list-style-type: none; */
   }
   #tribute-info ul li span {
     font-size: 1.2em;
